@@ -1,0 +1,8 @@
+@mixin transition($what: all, $time: 1.0s, $how: ease-in-out) {
+
+    -webkit-transition: $what $time +s $how ;
+    -moz-transition:    $what $time+s $how +" "+ 0s;
+    -ms-transition:     $what $time+s $how +" "+ 0s;
+    -o-transition:      $what $time+s $how +" "+ 0s;
+    transition:         $what $time +s $how +" "+ 0s ;
+}

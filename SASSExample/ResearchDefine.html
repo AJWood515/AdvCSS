@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>Research and Define Terms </title>
+
+</head>
+
+<body>
+
+  <div>
+    <h3>Research and Define CSS Terms</h3>
+    <p><b>Specificity- </b>a ranking on css properties that will be applied to an element. </p>
+    <p><b>Precedence- </b>a way to deal with mutiple style changes to a single element. Depends on the Specificity. </p>
+    <p><b>Inheritance- </b>a child element would gain the properties of a parent element.</p>
+    <p><b>Property- </b>define how the styles will look and where it will be placed on a wepage. </p>
+    <p><b>Value- </b>a color, size, and other things given to a property to make changes to the property. </p>
+    <p><b>Selector- </b>selects the content you wish to style. </p>
+  </div>
+  <div>
+    <h3>Selector and Selector Specificity</h3>
+    <p><b>Element- </b> selects all elements with that specified element name.
+      This is best used when specificity on the named element is not an issue such as want to change
+      all the text in paragraphs a certain color or have the same hover effect for all
+      links. The symbol for this is the element tag followed by curly brackets.
+    </p>
+    <p><b>Group- </b>groups element selectors together.
+      This can be best used when you want a group of elements to have the same property.
+      This is used by listing the elements and seperating them by a comma.
+    </p>
+    <p><b>Descendent- </b>a selector that will match all child or decendents of that specfic element.
+      This is best used when you are trying to style an element within another element. this is used by listing
+      the parent element first followed by a space then the child element you wish to style.
+    </p>
+    <p><b>Class- </b>selects elements with a specific class attribute.
+      This is best used when you want specify the exact element you wish to use.
+      This is used by using the period then a name of your choosing for the class.
+    </p>
+    <p><b>Id- </b>selector that uses an id to style a certain element with that id.
+      It is best used when you want to style a certain element with a specific id.
+      The symbol used for an id selector is the pound sign (#) followed by the name of the id.
+    </p>
+    <p><b>Universal- </b>this selector selects all of the elements.
+      The best way to use this selector is to not really use it at all
+      because this will select every thing but to use it as descendent selectorin certian situations might be okay.
+      The symbol for this is the asterick (*).
+    </p>
+    <p><b>Pseudo- </b> selecter that selects an elemenet's special state and style such as hover,
+      visted, active, and others. This is best used when you wish to style a element that can change states.
+      This selector uses the colon symbol (:) followed by the pseudo-class.
+    </p>
+    <p>
+      The order of specificity for these selectors from least specific to most is
+      unviersal, pseudo, element, group, descendent, class, and id.
+    </p>
+  </div>
+</body>
+
+</html>
+
+
+
+<!--list of Specificity = universal,pseudo, element, group, descendent, class, id -->

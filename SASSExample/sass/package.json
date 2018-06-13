@@ -1,0 +1,11 @@
+{
+  "name": "teststyle",
+  "version": "1.0.0",
+  "description": "test css",
+  "main": "index.js",
+  "scripts": {
+    "test": "try"
+  },
+  "author": "",
+  "license": "ISC"
+}

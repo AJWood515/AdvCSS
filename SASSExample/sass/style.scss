@@ -1,0 +1,60 @@
+$primColor: blue;
+$secColor: red;
+$img: url("../Images/notebook3.png");
+$size: auto;
+$border: 3px solid black;
+$txtPadding: 50px;
+$gradprim: black;
+$gradsec:yellow;
+
+@import '../gradient-mixin-example/gradientMixin';
+@import '../borderRadiusMixin/borderRadiusMixin';
+@import '../transitionMixin/transitionMixin';
+
+h1 {
+  color : $primColor;
+  height: $size;
+}
+
+body {
+  background-color: tan;
+}
+
+span div{
+  display:inline-flex;
+  height: $size;
+  width: 400px;
+  padding: 10px;
+  padding-left: $txtPadding;
+  background-image: $img;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  border: $border;
+
+  font-weight: bold;
+  font-size: 25px;
+  word-wrap: break-word;
+  @include transition(all, 1.5, ease);
+}
+section{
+  display: inline;
+}
+
+.box{
+    display: none;
+    width: 100%;
+}
+
+a:hover + .box,.box:hover{
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.applyGradient{
+
+   @include verticalGradient($gradprim, $gradsec);
+}
+.borderRadius{
+  @include borderRadius(10px);
+}

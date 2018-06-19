@@ -1,15 +1,15 @@
 $primColor: blue;
 $secColor: red;
-$img: url("../notebook3.png");
+$img: url("../Images/notebook3.png");
 $size: auto;
 $border: 3px solid black;
 $txtPadding: 50px;
 $gradprim: black;
 $gradsec:yellow;
 
-@import '../gradientMixin';
-@import '../borderRadiusMixin';
-@import '../transitionMixin';
+@import '../gradient-mixin-example/gradientMixin';
+@import '../borderRadiusMixin/borderRadiusMixin';
+@import '../transitionMixin/transitionMixin';
 
 h1 {
   color : $primColor;

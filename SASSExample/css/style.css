@@ -1,18 +1,64 @@
+/* CSS Document */
+/*
+@mixin borderRadius($topLeft, $topRight, $bottomRight,$bottomLeft){
+  border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+}
+*/
 h1 {
   color: blue;
-  height: 150px; }
+  height: auto; }
 
 body {
-  background-color: purple; }
+  background-color: tan; }
 
-body div {
+span div {
   display: inline-flex;
-  height: 150px;
+  height: auto;
   width: 400px;
   padding: 10px;
-  background-image: url("../notebook3.png");
+  padding-left: 50px;
+  background-image: url("../Images/notebook3.png");
   background-repeat: no-repeat;
   background-size: 500px;
-  border: 3px solid black; }
+  border: 3px solid black;
+  font-weight: bold;
+  font-size: 25px;
+  word-wrap: break-word;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease 0s;
+  -ms-transition: all 1.5s ease 0s;
+  -o-transition: all 1.5s ease 0s;
+  transition: all 1.5s ease 0s; }
+
+section {
+  display: inline; }
+
+.box {
+  display: none;
+  width: 100%; }
+
+a:hover + .box, .box:hover {
+  display: block;
+  position: relative;
+  z-index: 100; }
+
+.applyGradient {
+  background: black;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(black, yellow);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(black, yellow);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, yellow);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, yellow);
+  /* Standard syntax (must be last) */ }
+
+.borderRadius {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */

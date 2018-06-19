@@ -1,0 +1,92 @@
+@import '../borderRadiusMixin/borderRadiusMixin';
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One|Merriweather');
+header{
+  background: red;
+  height: 220px;
+}
+header aside {
+  padding:10px;
+  float: left;
+  height: 200px;
+  background: black;
+  width: 370px;
+  @include borderRadius(50px);
+}
+header aside img{
+  float: left;
+  width: 300px;
+  height:200px;
+  padding-left: 30px;
+}
+center{
+  padding: 20px;
+  font-family: 'Gravitas One', cursive;
+}
+body{
+  height:100%;
+  weight:100%;
+}
+
+section{
+  height:100%;
+  width:50%;
+  background: tan;
+  float:left;
+}
+main{
+  background: grey;
+  height:100%;
+  width: 50%;
+  float: right;
+}
+img.resize{
+  padding-left: 20%;
+  height: 100%;
+  width: 50%;
+}
+
+#bigPicture{
+
+    background: green;
+    height:50%;
+    width:90%;
+    padding:5%;
+}
+
+#smallPicture{
+  display:inline-flex;
+  background: yellow;
+  height:50%;
+  width:90%;
+  padding:5%;
+
+}
+
+body section div span img{
+  display:inline;
+  height: 40%;
+  width: 20%;
+}
+#description{
+  background: tan;
+  padding: 1%;
+  height:100%;
+  width: 98%;
+
+}
+
+p{
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+}
+#form{
+  background: blue;
+  height:50%;
+  width:96%;
+  padding:2%;
+  font-size: 22px;
+}
+footer{
+  background: purple;
+  clear:both;
+}

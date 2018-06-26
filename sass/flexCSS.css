@@ -1,0 +1,87 @@
+/*
+@mixin borderRadius($topLeft, $topRight, $bottomRight,$bottomLeft){
+  border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+}
+*/
+@import url("https://fonts.googleapis.com/css?family=Gravitas+One|Merriweather");
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 30%;
+  background-image: url("../Images/PacMan.jpg");
+  background-size: 30%;
+  color: white;
+  font-size: 40px; }
+
+header [title=logo] {
+  padding: 5%;
+  height: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+header center h1 {
+  padding-top: 75px;
+  padding-left: 40px; }
+
+header center h3 {
+  padding-left: 40px; }
+
+#body {
+  display: flex;
+  flex-direction: row; }
+
+section {
+  height: 100%;
+  width: 50%;
+  background: red;
+  padding-left: 10px;
+  padding-bottom: 29px; }
+
+#bigPicture img:first-child {
+  width: 75%;
+  align-content: center;
+  padding: 4%;
+  padding-left: 60px; }
+
+section span img {
+  display: inline-flex;
+  flex-direction: row;
+  height: 160px;
+  width: 30%;
+  padding: 10px; }
+
+main {
+  float: right;
+  height: 100%;
+  width: 50%;
+  background: yellow;
+  padding: 27px; }
+
+main #description {
+  font-family: Merriweather;
+  font-size: 28px; }
+
+#form {
+  border: solid black;
+  padding: 10px;
+  font-family: Gravitas One; }
+
+footer {
+  height: 100%;
+  width: 100%;
+  background: tan;
+  padding: 30px; }
+
+/*# sourceMappingURL=flexCSS.css.map */

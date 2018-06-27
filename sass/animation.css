@@ -1,0 +1,97 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px; }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
+/* Standard syntax */
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px; }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
+header {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  justify-self: center; }
+
+body {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(9, auto); }
+
+#transform {
+  border: black solid 5px;
+  grid-column: 1;
+  grid-row: 3;
+  transform: rotate(360deg); }
+
+#transform:hover {
+  ms-transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#transition {
+  border: black solid 5px;
+  grid-column: 3;
+  grid-row: 4; }
+
+#transition:hover {
+  -ms-transform: scale(2, 3);
+  -webkit-transform: scale(2, 3);
+  transform: scale(2, 3); }
+
+#animation {
+  border: black solid 5px;
+  grid-column: 5;
+  grid-row: 6;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: T 5s;
+  animation-iteration-count: infinite; }
+
+section {
+  grid-column: 1 / 5;
+  grid-row: 7 / 9; }
+
+/*# sourceMappingURL=animation.css.map */

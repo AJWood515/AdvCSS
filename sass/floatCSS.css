@@ -1,4 +1,8 @@
-
+/*
+@mixin borderRadius($topLeft, $topRight, $bottomRight,$bottomLeft){
+  border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+}
+*/
 @import url("https://fonts.googleapis.com/css?family=Gravitas+One|Merriweather");
 header {
   background: red;

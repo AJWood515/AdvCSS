@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(12, auto);
+  background-image: url("../starfall.png"); }
+
+div {
+  grid-column: 1;
+  grid-row: 6 / span 6;
+  border: black solid 1px;
+  height: 600px;
+  width: 200px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(13, auto);
+  background: white;
+  -webkit-transition: width 3s, height 3s, -webkit-transform 3s;
+  /* Safari */
+  transition: width 3s, height 3s, transform 3s;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example; }
+
+div:hover {
+  width: 600px;
+  height: 200px;
+  -webkit-transform: rotate(3600deg);
+  /* Safari */
+  transform: rotate(3600deg); }
+
+div img {
+  grid-column: 1;
+  grid-row: 12 / span 1;
+  align-self: end;
+  height: 75%;
+  width: 100%; }
+
+.empty {
+  opacity: 100; }
+
+div :hover {
+  opacity: 0; }
+
+/*# sourceMappingURL=starfall.css.map */

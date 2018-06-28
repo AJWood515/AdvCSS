@@ -1,22 +1,28 @@
 <!Doctype html>
 <head>
 <link rel="stylesheet" type="text/css" href="sass/starfall.css">
-<script>
-  function imageFunction(){
-    document.div.image.style.opacity="0";
-  }
+
 </script>
 </head>
 <body>
+  <header></header>
 <div>
   <center>
-  <h2>Coco Pebbles</h2>
-  <h3>Breakfast is the most important meal of the day</h3>
+  <h2>
+    <img src=".//Images/CocoPebblesLogo.png"
+   class="logo" alt="Cocoa Pebbles Logo"  onmouseover="this.src='.//Images/cocoaPebblesRecipe.png'"
+    onmouseout="this.src='.//Images/CocoPebblesLogo.png'">
+   <!--<img src =".//Images/cocoaPebblesRecipe.png"
+   class = "recipe">-->
+ </h2>
+  <h3>Breakfast is the most important meal of the day.<br/>
+  Hover over the Cocoa Pebbles Logo for a special recipe for <br/> <img src='.//Images/CocoPebblesLogo.png' style="height:60px; width:60px">
+ cookies.</h3>
 </center>
 <img src=".//Images/stock-photo-chocolate-cereals-in-white-bowl-on-white-background-725764084.jpg"
- class="full" alt="HTML5 Icon" >
+ class="full" alt="HTML5 Icon">
 
 <img src=".//Images/stock-photo-white-bowl-isolated-on-white-background-106081349.jpg"
-class="empty" alt="HTML5 Icon" onmouseover = "imageFunction()">
+class="empty" alt="HTML5 Icon" onmouseover="this.src='.//Images/stock-photo-chocolate-cereals-in-white-bowl-on-white-background-725764084.jpg'">
 </div>
 </body>

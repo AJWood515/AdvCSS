@@ -1,0 +1,74 @@
+$border: 2px solid black;
+@media only screen and (max-width: 480px) {
+  header {
+    background-color: lightgreen;
+    border: $border;
+  }
+  nav{
+    border:$border;
+    background-color: orange;
+  }
+
+  #left {
+    background-color: pink;
+    border: $border;
+  }
+  main div img {
+    height:60%;
+    width:100%;
+    float:left;
+  }
+
+  #right {
+    background-color: yellow;
+    border: $border;
+  }
+
+  footer {
+    background-color: lightblue;
+    border: $border;
+  }
+}
+@media only screen and (min-width: 481px) {
+header {
+  background-color: lightblue;
+  border: $border;
+}
+nav{
+  border:$border;
+  background-color: yellow;
+}
+
+#left {
+  background-color: green;
+  border: $border;
+  float: left;
+  height: 250px;
+  width:49%;
+}
+main #left img {
+  width:48%;
+  float:left;
+}
+main #left p{
+  padding: 10px;
+  width:40%;
+  float: right;
+  font-weight: bold;
+
+}
+
+#right {
+  background-color: teal;
+  border: $border;
+  float: right;
+  height: 250px;
+  width: 49%;
+}
+
+footer{
+  background-color: orange;
+  border: $border;
+  clear:both;
+}
+}

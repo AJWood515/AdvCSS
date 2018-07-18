@@ -1,12 +1,14 @@
 @media only screen and (max-width: 480px) {
   div {
     border: 2px solid black;
-    height: 320px;
-    width: 50px; } }
-@media only screen and (min-width: 480px) {
+    height: 100%;
+    width: 100%;
+    background-color: #D2691E; } }
+@media only screen and (min-width: 481px) {
   div {
     border: 2px solid red;
     height: 90px;
-    width: 728px; } }
+    width: 728px;
+    background-color: #D2691E; } }
 
 /*# sourceMappingURL=bannerAds.css.map */

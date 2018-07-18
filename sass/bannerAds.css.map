@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,yCAAyC;EACzC,GAAG;IACD,MAAM,EAAC,eAAe;IACtB,MAAM,EAAC,KAAK;IACZ,KAAK,EAAE,IAAI;AAGb,yCAAyC;EACzC,GAAG;IACD,MAAM,EAAC,aAAa;IACpB,MAAM,EAAC,IAAI;IACX,KAAK,EAAE,KAAK",
+"sources": ["bannerAds.scss"],
+"names": [],
+"file": "bannerAds.css"
+}

@@ -1,0 +1,15 @@
+
+@media only screen and (max-width: 480px){
+div{
+  border:2px solid black;
+  height:320px;
+  width: 50px;
+}
+}
+@media only screen and (min-width: 480px){
+div{
+  border:2px solid red;
+  height:90px;
+  width: 728px;
+}
+}

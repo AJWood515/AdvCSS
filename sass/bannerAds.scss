@@ -1,18 +1,55 @@
+$font: 'Fredericka the Great', cursive;
+@media only screen and (max-width: 480px) {
+  #background {
+    border: 2px solid black;
+    height: 250px;
+    width: 300px;
+    background-color: #D2691E;
+    padding: 10px;
+    background-image: url("../Images/turkey.gif");
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+  }
+  button{
+    animation-name: appear;
+    animation-duration: 15s;
+  }
+  #panel{
+    display:block;
 
-@media only screen and (max-width: 480px){
-div{
-  border:2px solid black;
-  height:300px;
-  width: 400px;
-  background-color: #D2691E;
-  padding: 10px;
+  }
+
+  #fill {
+    float: right;
+    font-family: $font;
+    text-align: right;
+    font-size: 40px;
+    margin-top: -20px;
+    width: 150px;
+    animation-name: appear;
+    animation-duration: 10s;
+  }
+
+  #catering {
+    font-family: $font;
+    float: left;
+    font-size: 30px;
+    margin-top: -90px;
+    wdith: 250px;
+  }
+  @keyframes appear {
+    0%   {opacity: 0;}
+    25%  {opacity: 25;}
+    50%  {opacity: 50;}
+    75%  {opacity: 75}
+    100% {opacity: 100;}
 }
 }
-@media only screen and (min-width: 481px){
-div{
-  border:2px solid red;
-  height:90px;
-  width: 728px;
-  background-color: #D2691E;
-}
+@media only screen and (min-width: 481px) {
+  div {
+    border: 2px solid red;
+    height: 90px;
+    width: 728px;
+    background-color: #D2691E;
+  }
 }

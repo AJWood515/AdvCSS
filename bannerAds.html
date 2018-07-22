@@ -3,14 +3,27 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="sass/bannerAds.css">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div>jhgfdfghj
+<section id = "panel">
+  <div id = "background">
+    <button type="button" onclick="hideFunction()">X</button>
+    <div>
+      <p id = "fill"> Let us refill your plate!</p>
+      <p id = "catering"> Call us for Thanksgiving Catering 515-123-4567</p>
+    </div>
+  </div>
+</section>
 
-</div>
-
+<script>
+  function hideFunction(){
+    document.getElementById('panel').style.display = 'none';
+  }
+  </script>
 </body>
 
 

@@ -46,10 +46,32 @@ $font: 'Fredericka the Great', cursive;
 }
 }
 @media only screen and (min-width: 481px) {
-  div {
+  #background {
     border: 2px solid red;
     height: 90px;
     width: 728px;
     background-color: #D2691E;
+    background-image: url("../Images/rightRunningTurkey.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    animation: turkey 15s linear;
   }
+  button{
+    animation-name: appear;
+    animation-duration: 20s;
+  }
+  @keyframes turkey{
+    0%{background-position: 0 0;}
+    25%{background-position: 50% 0;}
+    50%{background-position: 100% 0;}
+    75%{background-position: 50% 0;}
+    100%{background-position: 0 0;}
+  }
+  @keyframes appear {
+    0%   {opacity: 0;}
+    25%  {opacity: 25;}
+    50%  {opacity: 50;}
+    75%  {opacity: 75}
+    100% {opacity: 100;}
+}
 }

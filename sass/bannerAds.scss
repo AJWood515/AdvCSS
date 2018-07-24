@@ -1,4 +1,4 @@
-$font: 'Fredericka the Great', cursive;
+$font: 'Fredericka the Great', cursive; //MOBILE
 @media only screen and (max-width: 480px) {
   #background {
     border: 2px solid black;
@@ -10,13 +10,17 @@ $font: 'Fredericka the Great', cursive;
     background-size: 150px 150px;
     background-repeat: no-repeat;
   }
-  button{
+
+  #close {
     animation-name: appear;
     animation-duration: 15s;
   }
-  #panel{
-    display:block;
 
+  #panel {
+    display: block;
+  }
+  #turkey {
+    display: none;
   }
 
   #fill {
@@ -38,13 +42,28 @@ $font: 'Fredericka the Great', cursive;
     wdith: 250px;
   }
   @keyframes appear {
-    0%   {opacity: 0;}
-    25%  {opacity: 25;}
-    50%  {opacity: 50;}
-    75%  {opacity: 75}
-    100% {opacity: 100;}
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 25;
+    }
+
+    50% {
+      opacity: 50;
+    }
+
+    75% {
+      opacity: 75;
+    }
+
+    100% {
+      opacity: 100;
+    }
+  }
 }
-}
+//DESKTOP
 @media only screen and (min-width: 481px) {
   #background {
     border: 2px solid red;
@@ -54,24 +73,78 @@ $font: 'Fredericka the Great', cursive;
     background-image: url("../Images/rightRunningTurkey.png");
     background-size: 100px 100px;
     background-repeat: no-repeat;
-    animation: turkey 15s linear;
+    animation: turkey 10s linear forwards;
   }
-  button{
+
+  #close {
     animation-name: appear;
-    animation-duration: 20s;
+    animation-duration: 30s;
+    float:right;
   }
-  @keyframes turkey{
-    0%{background-position: 0 0;}
-    25%{background-position: 50% 0;}
-    50%{background-position: 100% 0;}
-    75%{background-position: 50% 0;}
-    100%{background-position: 0 0;}
+
+  #fill {
+    display:none;
+    font-family: $font;
+    font-size: 40px;
+    margin-top: -10px;
+    animation-name: appear;
+    animation-duration: 40s;
+  }
+  #turkey{
+    font-family: $font;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 0px;
+    animation-name: appear;
+    animation-duration: 90s;
+  }
+
+  #catering {
+    font-family: $font;
+    font-weight: bold;
+    float: left;
+    font-size: 29px;
+    margin-top: -35px;
+    wdith: 200px;
+  }
+  @keyframes turkey {
+    0% {
+      background-position: 0 0;
+    }
+
+    25% {
+      background-position: 25% 0;
+    }
+
+    50% {
+      background-position: 50% 0;
+    }
+
+    75% {
+      background-position: 75% 0;
+    }
+
+    100% {
+      background-position: 100% 0;
+    }
   }
   @keyframes appear {
-    0%   {opacity: 0;}
-    25%  {opacity: 25;}
-    50%  {opacity: 50;}
-    75%  {opacity: 75}
-    100% {opacity: 100;}
-}
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 5;
+    }
+
+    50% {
+      opacity: 5;
+    }
+    75% {
+      opacity: 10;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
 }

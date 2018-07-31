@@ -1,0 +1,125 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="jumbotron text-center">
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect!</p>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src=".//Images/pipboy.png" width="30" height="30" alt="">
+      Navbar
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropup">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="col-lg-12 text-center border border-dark">
+      <h2>Different Ipsums</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6" style="background-color: red">
+        <p>
+          <h3 style="color: white"> Samuel L. Jackson Pulp Fiction</h3>
+          <!-- start slipsum code http://slipsum.com/ -->
+          <p style="color: white">
+            Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become
+            television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+          </p>
+          <!-- end slipsum code -->
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h3> Bacon </h3>
+        <p>
+          Spicy jalapeno bacon ipsum dolor amet cow flank landjaeger prosciutto tenderloin, tail boudin kielbasa burgdoggen kevin tongue. Tongue pork loin ham brisket, venison bacon picanha leberkas biltong alcatra jerky boudin. Boudin meatball beef tenderloin
+          flank pork belly. Tongue fatback rump corned beef cow tenderloin ribeye leberkas hamburger flank sirloin shank turducken shankle strip steak. Meatloaf cow pig buffalo. Venison doner sausage, corned beef flank leberkas short loin meatloaf pastrami
+          rump t-bone buffalo. Strip steak t-bone jerky drumstick, kevin alcatra chicken tongue.
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-12" style="background-color: blue">
+        <h3 style=" color: white">Bob Ross</h3>
+        <p style=" color: white">
+          Mix your color marbly don't mix it dead. As trees get older they lose their chlorophyll. Let's put some highlights on these little trees. The sun wouldn't forget them. Nice little fluffy clouds laying around in the sky being lazy. Learn when to stop.
+          We can always carry this a step further. There's really no end to this. I like to beat the brush. But we're not there yet, so we don't need to worry about it. In your imagination you can go anywhere you want. We have all at one time or another
+          mixed some mud. Maybe he has a little friend that lives right over here. These things happen automatically. All you have to do is just let them happen. Steve wants reflections, so let's give him reflections. Any little thing can be your friend
+          if you let it be. Brown is such a nice color. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown.
+        </p>
+      </div>
+    </div>
+    <br/>
+    <div>
+      <h2>Animated Progress Bar</h2>
+      <div class="progress col-lg-12">
+
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+          40% Complete (danger color)
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="col-lg-12">
+      <p class="text-monospace text-info bg-warning">
+        Cupcake ipsum dolor. Sit amet soufflé I love halvah. I love tiramisu cotton candy chocolate biscuit. Gummies I love marshmallow toffee. Tootsie roll fruitcake bear claw apple pie chocolate bar sweet roll. Marshmallow dessert sweet I love chocolate chupa
+        chups cake tiramisu danish. Sweet roll jelly wafer. Gummies cheesecake jelly beans gummies sweet brownie. Muffin halvah I love I love gummi bears tart I love. Jelly candy canes muffin chocolate cake I love jelly. Gingerbread I love jelly-o pie
+        caramels chocolate. Sweet roll sweet roll candy brownie dessert marzipan sesame snaps marshmallow. Jelly apple pie powder pie jelly-o I love sweet roll cupcake. Marshmallow candy topping marzipan jujubes ice cream gingerbread tart. I love bonbon
+        cheesecake sweet roll sweet roll. Sweet roll danish I love marshmallow macaroon donut. Gummies I love soufflé sugar plum sweet roll fruitcake. Jelly-o chupa chups I love. Soufflé oat cake chocolate cake I love sweet roll donut croissant chupa
+        chups fruitcake. Lollipop marzipan I love cake chocolate cake jujubes. Jelly-o pudding cake cotton candy marshmallow I love toffee topping tootsie roll. Marshmallow jelly beans chocolate bar. I love cupcake I love chocolate cheesecake dessert
+        icing chupa chups. Jelly halvah topping cupcake carrot cake ice cream. Chocolate cake candy soufflé lollipop croissant pastry gummies jelly. I love chupa chups marshmallow cake. Sweet marzipan tootsie roll I love dessert I love chocolate biscuit
+        dragée. Cheesecake jelly-o I love fruitcake sugar plum. Brownie apple pie gummies cupcake bonbon. Croissant gummi bears biscuit. Tart wafer lollipop jelly beans soufflé bear claw. I love I love candy canes I love I love icing I love I love halvah.
+        Gingerbread gummi bears lemon drops cookie. Tart muffin I love I love croissant pudding fruitcake. I love jujubes tart cheesecake sugar plum bonbon bonbon. Pastry tootsie roll dragée macaroon chupa chups cake cookie chupa chups halvah. I love
+        gummi bears chocolate bar caramels I love cake dessert. Oat cake sweet roll danish halvah. Jelly candy gingerbread sweet powder apple pie. Halvah jelly chocolate bar I love cupcake sweet I love marshmallow I love. Danish muffin pudding soufflé
+        apple pie candy canes I love. Sweet roll caramels fruitcake chocolate cookie. Cake marshmallow jelly. Sugar plum donut I love chocolate cake. Chocolate sesame snaps gingerbread. Muffin chocolate cake I love donut lemon drops halvah biscuit I love.
+        Toffee jelly-o wafer chupa chups liquorice jujubes oat cake. Icing chupa chups oat cake. Jelly I love candy tiramisu jujubes cotton candy pudding sugar plum gummi bears. Chocolate cake jelly candy pie muffin I love croissant chocolate sweet roll.
+        Danish wafer cheesecake sweet. Jelly beans ice cream I love brownie I love sweet roll pastry. Danish topping candy canes bear claw muffin.
+      </p>
+    </div>
+
+
+
+  </main>
+</body>
+
+</html>

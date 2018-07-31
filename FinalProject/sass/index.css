@@ -99,9 +99,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  margin: 10px;
-  padding: 10px; }
+  background-attachment: fixed; }
 
 h4 {
   padding: 10px;
